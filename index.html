@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manito 3D Animado</title>
+    <title> 3D Animado</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
@@ -163,7 +163,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">🎮 Manito es feliz por que reciclas</h1>
+        <h1 class="title">🎮  es feliz por que reciclas</h1>
         
         <div id="canvas-container">
             <div class="logo-container">
@@ -176,7 +176,7 @@
             
             <div class="loading" id="loading">
                 <div class="spinner"></div>
-                <p>Cargando a manito en 3d...</p>
+                <p>Cargando a  en 3d...</p>
             </div>
         </div>
 
@@ -303,15 +303,15 @@
                     scene.add(model);
                     
                     document.getElementById('loading').style.display = 'none';
-                    console.log('Modelo manito.glb cargado exitosamente');
+                    console.log('Modelo mascota.png cargado exitosamente');
                 },
                 (xhr) => {
                     const percent = (xhr.loaded / xhr.total * 100).toFixed(0);
-                    document.querySelector('#loading p').textContent = `Cargando manito.glb: ${percent}%`;
+                    document.querySelector('#loading p').textContent = `Cargando mascota.png : ${percent}%`;
                 },
                 (error) => {
-                    console.error('Error cargando manito.glb:', error);
-                    document.querySelector('#loading p').textContent = 'Error: No se encontró manito.glb';
+                    console.error('Error cargando mascota.png:', error);
+                    document.querySelector('#loading p').textContent = 'Error: No se encontró mascota.png';
                     document.querySelector('#loading p').style.color = '#ff6b6b';
                     
                     const placeholderGeometry = new THREE.CapsuleGeometry(0.5, 1.5, 4, 8);
